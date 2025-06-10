@@ -1,12 +1,13 @@
 import SwiftUI
 
-struct HomeView: View {
-    
+struct SettingsView: View {
+
     var body: some View {
         NavigationView {
             VStack {
-                Toggle("Nugget", destination: ToolsView())
-                NavigationLink("dirtyZero", destination: Toolsview())
+                Text("Settings")
+                    .font(.largeTitle)
+                    .padding()
             }
         }
     }
