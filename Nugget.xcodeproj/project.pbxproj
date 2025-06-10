@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1234567890ABCDEF12345678 /* Alertinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234567890ABCDEF12345677 /* Alertinator.swift */; };
+		1234567890ABCDEF12345676 /* bridge.h in Sources */ = {isa = PBXBuildFile; fileRef = 1234567890ABCDEF12345675 /* bridge.h */; };
+		1234567890ABCDEF12345674 /* Color++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234567890ABCDEF12345673 /* Color++/swift */; };
+		1234567890ABCDEF12345672 /* DirtyZeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234567890ABCDEF12345671 /* DirtyZeroView.swift */; };
+		1234567890ABCDEF12345670 /* Haptics++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234567890ABCDEF12345679 /* Haptics++.swift */; };
+		1234567890ABCDEF12345688 /* LoggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234567890ABCDEF12345687 /* LoggerView.swift */; };
+		1234567890ABCDEF12345686 /* unwire_mlock_poc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234567890ABCDEF12345685 /* unwire_mlock_poc.swift */; };
 		6F2A99722C9E0ABB00C8A862 /* EligibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2A99712C9E0ABB00C8A862 /* EligibilityView.swift */; };
 		6F9999992D00000000C8A862 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9999972D00000000C8A862 /* SettingsView.swift */; };
 		6F2A99742C9E0AEF00C8A862 /* EligibilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2A99732C9E0AEF00C8A862 /* EligibilityManager.swift */; };
@@ -47,19 +54,19 @@
 		6F8594D22C99D6CC00F790D1 /* RevertTweaksPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView.swift */; };
 		6F8594D42C9A006800F790D1 /* ModifyTweakViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8594D32C9A006800F790D1 /* ModifyTweakViewModifier.swift */; };
 		6F8594D92C9C9F6E00F790D1 /* HelperFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8594D82C9C9F6E00F790D1 /* HelperFuncs.swift */; };
-		6F9999912D00000000C8A862 /* Alertinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9999812D00000000C8A862 /* Alertinator.swift */; };
-		6F9999922D00000000C8A862 /* bridge.h in Sources */ = {isa = PBXBuildFile; fileRef = 6F9999822D00000000C8A862 /* bridge.h */; };
-		6F9999932D00000000C8A862 /* Color++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9999832D00000000C8A862 /* Color++.swift */; };
-		6F9999942D00000000C8A862 /* DirtyZeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9999842D00000000C8A862 /* DirtyZeroView.swift */; };
-		6F9999952D00000000C8A862 /* Haptics++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9999852D00000000C8A862 /* Haptics++.swift */; };
-		6F9999962D00000000C8A862 /* LoggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9999862D00000000C8A862 /* LoggerView.swift */; };
-		6F9999972D00000000C8A862 /* unwire_mlock_poc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9999872D00000000C8A862 /* unwire_mlock_poc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1234567890ABCDEF12345677 /* Alertinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/Alertinator.swift; sourceTree = "<group>"; };
+		1234567890ABCDEF12345675 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dirtyZero/bridge.h; sourceTree = "<group>"; };
+		1234567890ABCDEF12345673 /* Color++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/Color++.swift; sourceTree = "<group>"; };
+		1234567890ABCDEF12345671 /* DirtyZeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/DirtyZeroView.swift; sourceTree = "<group>"; };
+		1234567890ABCDEF12345679 /* Haptics++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/Haptics++.swift; sourceTree = "<group>"; };
+		1234567890ABCDEF12345687 /* LoggerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/LoggerView.swift; sourceTree = "<group>"; };
+		1234567890ABCDEF12345685 /* unwire_mlock_poc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/unwire_mlock_poc.swift; sourceTree = "<group>"; };
 		6F2A99712C9E0ABB00C8A862 /* EligibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EligibilityView.swift; sourceTree = "<group>"; };
-		6F9999972D00000000C8A862 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		6F9999962D00000000C8A862 /* DirtyZeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyZeroView.swift; sourceTree = "<group>"; };
+		6F9999972D00000000C8A862 /* SettingsView */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6F9999962D00000000C8A862 /* DirtyZeroView */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyZeroView.swift; sourceTree = "<group>"; };
 		6F2A99732C9E0AEF00C8A862 /* EligibilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EligibilityManager.swift; sourceTree = "<group>"; };
 		6F2A99772C9E0C1E00C8A862 /* eligibility.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = eligibility.plist; sourceTree = "<group>"; };
 		6F2A99792C9E18DE00C8A862 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Config.plist; sourceTree = "<group>"; };
@@ -102,16 +109,9 @@
 		6F8594CA2C98887900F790D1 /* FilePickerUIRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerUIRepresentable.swift; sourceTree = "<group>"; };
 		6F8594CC2C98892900F790D1 /* FixDocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixDocumentPicker.swift; sourceTree = "<group>"; };
 		6F8594CE2C988C0E00F790D1 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
-		6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertTweaksPopoverView.swift; sourceTree = "<group>"; };
+		6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertTweaksPopoverView.swift; sourceTree = "<group>"; };
 		6F8594D32C9A006800F790D1 /* ModifyTweakViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyTweakViewModifier.swift; sourceTree = "<group>"; };
 		6F8594D82C9C9F6E00F790D1 /* HelperFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFuncs.swift; sourceTree = "<group>"; };
-		6F9999812D00000000C8A862 /* Alertinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/Alertinator.swift; sourceTree = "<group>"; };
-		6F9999822D00000000C8A862 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dirtyZero/bridge.h; sourceTree = "<group>"; };
-		6F9999832D00000000C8A862 /* Color++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/Color++.swift; sourceTree = "<group>"; };
-		6F9999842D00000000C8A862 /* DirtyZeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/DirtyZeroView.swift; sourceTree = "<group>"; };
-		6F9999852D00000000C8A862 /* Haptics++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/Haptics++.swift; sourceTree = "<group>"; };
-		6F9999862D00000000C8A862 /* LoggerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/LoggerView.swift; sourceTree = "<group>"; };
-		6F9999872D00000000C8A862 /* unwire_mlock_poc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/unwire_mlock_poc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +164,7 @@
 				6F2A99762C9E0C1000C8A862 /* Files */,
 				6F85935A2C8F41E100F790D1 /* Preview Content */,
 				6F8593B02C8F7B8400F790D1 /* xcode_saver.swift */,
+				1234567890ABCDEF12345660 /* dirtyZero */,
 			);
 			path = Nugget;
 			sourceTree = "<group>";
@@ -193,7 +194,6 @@
 				6F8594C72C98885000F790D1 /* FilePicker */,
 				6F8593672C8F429700F790D1 /* NavigatorViews */,
 				6F8593642C8F423600F790D1 /* Tweaks */,
-				6F9999802D00000000C8A862 /* dirtyZero */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,8 +217,8 @@
 				6F8593682C8F42A800F790D1 /* HomeView.swift */,
 				6F85936A2C8F42D100F790D1 /* ToolsView.swift */,
 				6F8593AB2C8F61FC00F790D1 /* LogView.swift */,
-				6F9999972D00000000C8A862 /* SettingsView.swift */,
-				6F9999962D00000000C8A862 /* DirtyZeroView.swift */,
+				6F9999972D00000000C8A862 /* SettingsView */,
+				6F9999962D00000000C8A862 /* DirtyZeroView */,
 			);
 			path = NavigatorViews;
 			sourceTree = "<group>";
@@ -294,22 +294,22 @@
 		6F8594D02C99D68100F790D1 /* AccessoryViews */ = {
 			isa = PBXGroup;
 			children = (
-				6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView */,
+				6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView.swift */,
 				6F8594D32C9A006800F790D1 /* ModifyTweakViewModifier.swift */,
 			);
 			path = AccessoryViews;
 			sourceTree = "<group>";
 		};
-		6F9999802D00000000C8A862 /* dirtyZero */ = {
+		1234567890ABCDEF12345660 /* dirtyZero */ = {
 			isa = PBXGroup;
 			children = (
-				6F9999812D00000000C8A862 /* Alertinator.swift */,
-				6F9999822D00000000C8A862 /* bridge.h */,
-				6F9999832D00000000C8A862 /* Color++.swift */,
-				6F9999842D00000000C8A862 /* DirtyZeroView.swift */,
-				6F9999852D00000000C8A862 /* Haptics++.swift */,
-				6F9999862D00000000C8A862 /* LoggerView.swift */,
-				6F9999872D00000000C8A862 /* unwire_mlock_poc.swift */,
+				1234567890ABCDEF12345677 /* Alertinator.swift */,
+				1234567890ABCDEF12345675 /* bridge.h */,
+				1234567890ABCDEF12345673 /* Color++.swift */,
+				1234567890ABCDEF12345671 /* DirtyZeroView.swift */,
+				1234567890ABCDEF12345679 /* Haptics++.swift */,
+				1234567890ABCDEF12345687 /* LoggerView.swift */,
+				1234567890ABCDEF12345685 /* unwire_mlock_poc.swift */,
 			);
 			path = dirtyZero;
 			sourceTree = "<group>";
@@ -424,13 +424,6 @@
 				6F8593732C8F443A00F790D1 /* MaterialView.swift in Sources */,
 				6F9999992D00000000C8A862 /* SettingsView.swift in Sources */,
 				6F9999982D00000000C8A862 /* DirtyZeroView.swift in Sources */,
-				6F9999912D00000000C8A862 /* Alertinator.swift in Sources */,
-				6F9999922D00000000C8A862 /* bridge.h in Sources */,
-				6F9999932D00000000C8A862 /* Color++.swift in Sources */,
-				6F9999942D00000000C8A862 /* DirtyZeroView.swift in Sources */,
-				6F9999952D00000000C8A862 /* Haptics++.swift in Sources */,
-				6F9999962D00000000C8A862 /* LoggerView.swift in Sources */,
-				6F9999972D00000000C8A862 /* unwire_mlock_poc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
