@@ -117,6 +117,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435DD12F2DDD7DF00058DFCA /* MobileCoreServices.framework in Frameworks */,
+				4305D0D62DCDDD7000399896 /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
