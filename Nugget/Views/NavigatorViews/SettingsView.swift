@@ -1,14 +1,15 @@
 import SwiftUI
 
 struct SettingsView: View {
-
+    @State private var Nugegt = true
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Settings")
-                    .font(.largeTitle)
-                    .padding()
+            List {
+                Toggle(isOn: $Nugget) {
+                    Text("Nugget")
+                }
             }
+            .navigationTitle("Settings")
         }
     }
 }

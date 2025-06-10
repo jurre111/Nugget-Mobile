@@ -173,17 +173,34 @@ struct ToolsView: View {
                             }
                 
                 // MARK: App Credits
-                Section {
-                    // app credits
-                    LinkCell(imageName: "leminlimez", url: "https://x.com/leminlimez", title: "leminlimez", contribution: NSLocalizedString("Main Developer", comment: "leminlimez's contribution"), circle: true)
-                    LinkCell(imageName: "khanhduytran", url: "https://github.com/khanhduytran0/SparseBox", title: "khanhduytran0", contribution: "SparseBox", circle: true)
-                    LinkCell(imageName: "jjtech", url: "https://github.com/JJTech0130/TrollRestore", title: "JJTech0130", contribution: "Sparserestore", circle: true)
-                    LinkCell(imageName: "disfordottie", url: "https://x.com/disfordottie", title: "disfordottie", contribution: "Some Global Flag Features", circle: true)
-                    LinkCell(imageName: "f1shy-dev", url: "https://gist.github.com/f1shy-dev/23b4a78dc283edd30ae2b2e6429129b5#file-eligibility-plist", title: "f1shy-dev", contribution: "AI Enabler", circle: true)
-                    LinkCell(imageName: "app.gift", url: "https://sidestore.io/", title: "SideStore", contribution: "em_proxy and minimuxer", systemImage: true, circle: true)
-                    LinkCell(imageName: "cable.connector", url: "https://libimobiledevice.org", title: "libimobiledevice", contribution: "Restore Library", systemImage: true, circle: true)
-                } header: {
-                    Label("Credits", systemImage: "wrench.and.screwdriver")
+            }
+            List {
+                ForEach($tools) { category in
+                    Section {
+                        ForEach(category.pages) { option in
+                            if option.minVersion.wrappedValue <= userVersion {
+                                NavigationLink(destination: option.view.wrappedValue) {
+                                    HStack {
+                                        Image(systemName: option.imageName.wrappedValue)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 24, height: 24)
+                                            .foregroundColor(.blue)
+                                        Text(option.title.wrappedValue)
+                                            .padding(.horizontal, 8)
+                                        if applyHandler.isTweakEnabled(option.page.wrappedValue) {
+                                            // show that it is enabled
+                                            Spacer()
+                                            Image(systemName: "checkmark.seal")
+                                                .foregroundStyle(Color(.green))
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    } header: {
+                        Text(category.title.wrappedValue)
+                    }
                 }
             }
             .onOpenURL(perform: { url in
@@ -219,37 +236,6 @@ struct ToolsView: View {
                 Button("OK") {}
             } message: {
                 Text(lastError ?? "???")
-            }
-        }
-        NavigationView {
-            List {
-                ForEach($tools) { category in
-                    Section {
-                        ForEach(category.pages) { option in
-                            if option.minVersion.wrappedValue <= userVersion {
-                                NavigationLink(destination: option.view.wrappedValue) {
-                                    HStack {
-                                        Image(systemName: option.imageName.wrappedValue)
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: 24, height: 24)
-                                            .foregroundColor(.blue)
-                                        Text(option.title.wrappedValue)
-                                            .padding(.horizontal, 8)
-                                        if applyHandler.isTweakEnabled(option.page.wrappedValue) {
-                                            // show that it is enabled
-                                            Spacer()
-                                            Image(systemName: "checkmark.seal")
-                                                .foregroundStyle(Color(.green))
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    } header: {
-                        Text(category.title.wrappedValue)
-                    }
-                }
             }
         }
     }
