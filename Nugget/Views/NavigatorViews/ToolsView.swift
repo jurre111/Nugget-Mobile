@@ -172,9 +172,6 @@ struct ToolsView: View {
                                 Text(lastError ?? "???")
                             }
                 
-                // MARK: App Credits
-            }
-            List {
                 ForEach($tools) { category in
                     Section {
                         ForEach(category.pages) { option in

@@ -5,8 +5,10 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             List {
-                Toggle(isOn: $Nugget) {
+                Section {
+                    Toggle(isOn: $Nugget) {
                     Text("Nugget")
+                }
                 }
             }
             .navigationTitle("Settings")
