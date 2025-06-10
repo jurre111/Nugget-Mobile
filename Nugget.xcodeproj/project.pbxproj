@@ -109,7 +109,7 @@
 		6F8594CA2C98887900F790D1 /* FilePickerUIRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerUIRepresentable.swift; sourceTree = "<group>"; };
 		6F8594CC2C98892900F790D1 /* FixDocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixDocumentPicker.swift; sourceTree = "<group>"; };
 		6F8594CE2C988C0E00F790D1 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
-		6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertTweaksPopoverView.swift; sourceTree = "<group>"; };
+		6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertTweaksPopoverView.swift; sourceTree = "<group>"; };
 		6F8594D32C9A006800F790D1 /* ModifyTweakViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyTweakViewModifier.swift; sourceTree = "<group>"; };
 		6F8594D82C9C9F6E00F790D1 /* HelperFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFuncs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,8 +217,8 @@
 				6F8593682C8F42A800F790D1 /* HomeView.swift */,
 				6F85936A2C8F42D100F790D1 /* ToolsView.swift */,
 				6F8593AB2C8F61FC00F790D1 /* LogView.swift */,
-				6F9999972D00000000C8A862 /* SettingsView */,
-				6F9999962D00000000C8A862 /* DirtyZeroView */,
+				6F9999972D00000000C8A862 /* SettingsView.swift */,
+				1234567890ABCDEF12345671 /* DirtyZeroView.swift */,
 			);
 			path = NavigatorViews;
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 		6F8594D02C99D68100F790D1 /* AccessoryViews */ = {
 			isa = PBXGroup;
 			children = (
-				6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView.swift */,
+				6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView */,
 				6F8594D32C9A006800F790D1 /* ModifyTweakViewModifier.swift */,
 			);
 			path = AccessoryViews;
