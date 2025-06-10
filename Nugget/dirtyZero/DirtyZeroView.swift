@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import DeviceKit
 import UIKit
 
 struct ZeroTweak: Identifiable, Codable {
