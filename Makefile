@@ -38,6 +38,7 @@ NAV_VIEWS_DIR := $(VIEWS_DIR)/NavigatorViews
 TWEAK_VIEWS_DIR := $(VIEWS_DIR)/Tweaks
 ACC_VIEWS_DIR := $(VIEWS_DIR)/AccessoryViews
 FILE_PICKER_VIEWS_DIR := $(VIEWS_DIR)/FilePicker
+DIRTY_ZERO_DIR := $(SRC_DIR)/dirtyZero
 
 EXT_DIR := $(SRC_DIR)/Extensions
 UI_EXT_DIR := $(EXT_DIR)/UI
@@ -77,6 +78,8 @@ $(APPLICATION_NAME)_FILES += $(wildcard $(UI_EXT_DIR)/*.swift)
 $(APPLICATION_NAME)_FILES += $(wildcard $(TWEAK_CONTROLLERS_DIR)/*.swift)
 $(APPLICATION_NAME)_FILES += $(wildcard $(CONTROLLERS_DIR)/*.swift)
 $(APPLICATION_NAME)_FILES += $(wildcard $(STATUS_MANAGER_DIR)/*.m)
+$(APPLICATION_NAME)_FILES += $(wildcard $(DIRTY_ZERO_DIR)/*.swift)
+$(APPLICATION_NAME)_FILES += $(wildcard $(DIRTY_ZERO_DIR)/*.h)
 $(APPLICATION_NAME)_FILES += $(SRC_DIR)/NuggetApp.swift
 
 $(APPLICATION_NAME)_FRAMEWORKS = UIKit
