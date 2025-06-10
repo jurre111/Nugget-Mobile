@@ -17,7 +17,7 @@ struct AppOption: Identifiable {
 struct HomeView: View {
     @State var apps: [AppOption] = [
         .init(title: "Nugget", view: AnyView(ToolsView()), imageName: "hammer.fill"),
-        .init(title: "DirtyZero", view: AnyView(ToolsView()), imageName: "eraser.fill"),
+        .init(title: "DirtyZero", view: AnyView(DirtyZeroView()), imageName: "eraser.fill"),
     ]
     var body: some View {
         NavigationView {
