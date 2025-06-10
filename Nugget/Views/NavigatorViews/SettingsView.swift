@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State private var Nugegt = true
+    @State private var Nugget = true
     var body: some View {
         NavigationView {
             List {
