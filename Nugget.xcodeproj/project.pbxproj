@@ -46,13 +46,13 @@
 		6F8594D22C99D6CC00F790D1 /* RevertTweaksPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView.swift */; };
 		6F8594D42C9A006800F790D1 /* ModifyTweakViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8594D32C9A006800F790D1 /* ModifyTweakViewModifier.swift */; };
 		6F8594D92C9C9F6E00F790D1 /* HelperFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8594D82C9C9F6E00F790D1 /* HelperFuncs.swift */; };
-		6F10000A2D00000000F790D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1000012D00000000F790D1 /* SettingsView.swift */; };
-		6F10000B2D00000000F790D1 /* Alertinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1000022D00000000F790D1 /* Alertinator.swift */; };
-		6F10000C2D00000000F790D1 /* Color++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1000042D00000000F790D1 /* Color++.swift */; };
-		6F10000D2D00000000F790D1 /* DirtyZeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1000052D00000000F790D1 /* DirtyZeroView.swift */; };
-		6F10000E2D00000000F790D1 /* Haptics++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1000062D00000000F790D1 /* Haptics++.swift */; };
-		6F10000F2D00000000F790D1 /* LoggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1000072D00000000F790D1 /* LoggerView.swift */; };
-		6F1000102D00000000F790D1 /* unwire_mlock_poc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1000082D00000000F790D1 /* unwire_mlock_poc.swift */; };
+		6F1000012D00000000F790D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1000092D00000000F790D1 /* SettingsView.swift */; };
+        6F1000022D00000000F790D1 /* Alertinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F10000A2D00000000F790D1 /* Alertinator.swift */; };
+        6F1000032D00000000F790D1 /* Color++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F10000B2D00000000F790D1 /* Color++.swift */; };
+        6F1000042D00000000F790D1 /* DirtyZeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F10000C2D00000000F790D1 /* DirtyZeroView.swift */; };
+        6F1000052D00000000F790D1 /* Haptics++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F10000D2D00000000F790D1 /* Haptics++.swift */; };
+        6F1000062D00000000F790D1 /* LoggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F10000E2D00000000F790D1 /* LoggerView.swift */; };
+        6F1000072D00000000F790D1 /* unwire_mlock_poc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F10000F2D00000000F790D1 /* unwire_mlock_poc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,17 +99,17 @@
 		6F8594CA2C98887900F790D1 /* FilePickerUIRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerUIRepresentable.swift; sourceTree = "<group>"; };
 		6F8594CC2C98892900F790D1 /* FixDocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixDocumentPicker.swift; sourceTree = "<group>"; };
 		6F8594CE2C988C0E00F790D1 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
-		6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertTweaksPopoverView.swift; sourceTree = "<group>"; };
+		6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertTweaksPopoverView.swift; sourceTree = "<group>"; };
 		6F8594D32C9A006800F790D1 /* ModifyTweakViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyTweakViewModifier.swift; sourceTree = "<group>"; };
 		6F8594D82C9C9F6E00F790D1 /* HelperFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFuncs.swift; sourceTree = "<group>"; };
-		6F1000012D00000000F790D1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		6F1000022D00000000F790D1 /* Alertinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertinator.swift; sourceTree = "<group>"; };
-		6F1000032D00000000F790D1 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
-		6F1000042D00000000F790D1 /* Color++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color++.swift"; sourceTree = "<group>"; };
-		6F1000052D00000000F790D1 /* DirtyZeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyZeroView.swift; sourceTree = "<group>"; };
-		6F1000062D00000000F790D1 /* Haptics++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Haptics++.swift"; sourceTree = "<group>"; };
-		6F1000072D00000000F790D1 /* LoggerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerView.swift; sourceTree = "<group>"; };
-		6F1000082D00000000F790D1 /* unwire_mlock_poc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unwire_mlock_poc.swift; sourceTree = "<group>"; };
+		6F1000092D00000000F790D1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+        6F10000A2D00000000F790D1 /* Alertinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertinator.swift; sourceTree = "<group>"; };
+        6F10000B2D00000000F790D1 /* Color++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color++.swift"; sourceTree = "<group>"; };
+        6F10000C2D00000000F790D1 /* DirtyZeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyZeroView.swift; sourceTree = "<group>"; };
+        6F10000D2D00000000F790D1 /* Haptics++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Haptics++.swift"; sourceTree = "<group>"; };
+        6F10000E2D00000000F790D1 /* LoggerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerView.swift; sourceTree = "<group>"; };
+        6F10000F2D00000000F790D1 /* unwire_mlock_poc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unwire_mlock_poc.swift; sourceTree = "<group>"; };
+        6F1000102D00000000F790D1 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +158,7 @@
 				6F8594B32C92055100F790D1 /* Sparserestore */,
 				6F85936C2C8F433E00F790D1 /* Extensions */,
 				6F8593632C8F422900F790D1 /* Views */,
-				6F1000092D00000000F790D1 /* dirtyZero */,
+				6F1000082D00000000F790D1 /* dirtyZero */,
 				6F8593542C8F41E000F790D1 /* NuggetApp.swift */,
 				6F2A99762C9E0C1000C8A862 /* Files */,
 				6F85935A2C8F41E100F790D1 /* Preview Content */,
@@ -215,25 +215,102 @@
 				6F8593682C8F42A800F790D1 /* HomeView.swift */,
 				6F85936A2C8F42D100F790D1 /* ToolsView.swift */,
 				6F8593AB2C8F61FC00F790D1 /* LogView.swift */,
-				6F1000012D00000000F790D1 /* SettingsView.swift */,
+				6F1000092D00000000F790D1 /* SettingsView.swift */,
 			);
 			path = NavigatorViews;
 			sourceTree = "<group>";
 		};
-		6F1000092D00000000F790D1 /* dirtyZero */ = {
+		6F85936C2C8F433E00F790D1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6F1000022D00000000F790D1 /* Alertinator.swift */,
-				6F1000032D00000000F790D1 /* bridge.h */,
-				6F1000042D00000000F790D1 /* Color++.swift */,
-				6F1000052D00000000F790D1 /* DirtyZeroView.swift */,
-				6F1000062D00000000F790D1 /* Haptics++.swift */,
-				6F1000072D00000000F790D1 /* LoggerView.swift */,
-				6F1000082D00000000F790D1 /* unwire_mlock_poc.swift */,
+				6F8593712C8F442F00F790D1 /* UI */,
+				6F8593742C8F448100F790D1 /* Alert++.swift */,
+				6F85936D2C8F436C00F790D1 /* Extensions.swift */,
+				6F8593762C8F490400F790D1 /* Version.swift */,
+				6F8594D82C9C9F6E00F790D1 /* HelperFuncs.swift */,
 			);
-			path = dirtyZero;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
+		6F8593712C8F442F00F790D1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6F8593722C8F443A00F790D1 /* MaterialView.swift */,
+				6F85936F2C8F441200F790D1 /* TintedButton.swift */,
+				6F8594CC2C98892900F790D1 /* FixDocumentPicker.swift */,
+				6F8594CE2C988C0E00F790D1 /* DeviceModel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6F8593782C8F4C5D00F790D1 /* Tweaks */ = {
+			isa = PBXGroup;
+			children = (
+				6F8594A42C8FAC8B00F790D1 /* StatusManager */,
+				6F8594BD2C94B9AA00F790D1 /* BasicPlistTweaksManager.swift */,
+				6F8594BF2C94BBC400F790D1 /* BasicPlistTweaksFileLocations.swift */,
+				6F8593792C8F4C7000F790D1 /* MobileGestaltManager.swift */,
+				6F8593B22C8F91C900F790D1 /* FeatureFlagManager.swift */,
+				6F8594AB2C8FADF300F790D1 /* StatusManagerSwift.swift */,
+				6F2A99732C9E0AEF00C8A862 /* EligibilityManager.swift */,
+			);
+			path = Tweaks;
+			sourceTree = "<group>";
+		};
+		6F8594A42C8FAC8B00F790D1 /* StatusManager */ = {
+			isa = PBXGroup;
+			children = (
+				6F85949B2C8FAC8B00F790D1 /* StatusManager.h */,
+				6F85949C2C8FAC8B00F790D1 /* StatusManager.m */,
+				6F85949D2C8FAC8B00F790D1 /* StatusSetter.h */,
+				6F8594A22C8FAC8B00F790D1 /* StatusSetter16.h */,
+				6F8594A32C8FAC8B00F790D1 /* StatusSetter16.m */,
+				6F8594A02C8FAC8B00F790D1 /* StatusSetter16_1.h */,
+				6F8594A12C8FAC8B00F790D1 /* StatusSetter16_1.m */,
+			);
+			path = StatusManager;
+			sourceTree = "<group>";
+		};
+		6F8594B32C92055100F790D1 /* Sparserestore */ = {
+			isa = PBXGroup;
+			children = (
+				6F8594B82C92056D00F790D1 /* Restore.swift */,
+			);
+			path = Sparserestore;
+			sourceTree = "<group>";
+		};
+		6F8594C72C98885000F790D1 /* FilePicker */ = {
+			isa = PBXGroup;
+			children = (
+				6F8594C82C98886000F790D1 /* FilePicker.swift */,
+				6F8594CA2C98887900F790D1 /* FilePickerUIRepresentable.swift */,
+			);
+			path = FilePicker;
+			sourceTree = "<group>";
+		};
+		6F8594D02C99D68100F790D1 /* AccessoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				6F8594D12C99D6CC00F790D1 /* RevertTweaksPopoverView.swift */,
+				6F8594D32C9A006800F790D1 /* ModifyTweakViewModifier.swift */,
+			);
+			path = AccessoryViews;
+			sourceTree = "<group>";
+		};
+		6F1000082D00000000F790D1 /* dirtyZero */ = {
+            isa = PBXGroup;
+            children = (
+                6F10000A2D00000000F790D1 /* Alertinator.swift */,
+                6F1000102D00000000F790D1 /* bridge.h */,
+                6F10000B2D00000000F790D1 /* Color++.swift */,
+                6F10000C2D00000000F790D1 /* DirtyZeroView.swift */,
+                6F10000D2D00000000F790D1 /* Haptics++.swift */,
+                6F10000E2D00000000F790D1 /* LoggerView.swift */,
+                6F10000F2D00000000F790D1 /* unwire_mlock_poc.swift */,
+            );
+            path = dirtyZero;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,13 +419,13 @@
 				6F85937A2C8F4C7000F790D1 /* MobileGestaltManager.swift in Sources */,
 				6F8594D92C9C9F6E00F790D1 /* HelperFuncs.swift in Sources */,
 				6F8593732C8F443A00F790D1 /* MaterialView.swift in Sources */,
-				6F10000A2D00000000F790D1 /* SettingsView.swift in Sources */,
-				6F10000B2D00000000F790D1 /* Alertinator.swift in Sources */,
-				6F10000C2D00000000F790D1 /* Color++.swift in Sources */,
-				6F10000D2D00000000F790D1 /* DirtyZeroView.swift in Sources */,
-				6F10000E2D00000000F790D1 /* Haptics++.swift in Sources */,
-				6F10000F2D00000000F790D1 /* LoggerView.swift in Sources */,
-				6F1000102D00000000F790D1 /* unwire_mlock_poc.swift in Sources */,
+				6F1000012D00000000F790D1 /* SettingsView.swift in Sources */,
+                6F1000022D00000000F790D1 /* Alertinator.swift in Sources */,
+                6F1000032D00000000F790D1 /* Color++.swift in Sources */,
+                6F1000042D00000000F790D1 /* DirtyZeroView.swift in Sources */,
+                6F1000052D00000000F790D1 /* Haptics++.swift in Sources */,
+                6F1000062D00000000F790D1 /* LoggerView.swift in Sources */,
+                6F1000072D00000000F790D1 /* unwire_mlock_poc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
