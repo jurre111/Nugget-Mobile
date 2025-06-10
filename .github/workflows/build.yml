@@ -98,7 +98,7 @@ jobs:
           fi
       - name: Fakesign
         run: |
-          ls "$archive_path.xcarchive/Products/Applications/dirtyZero.app"
+          ls "$archive_path.xcarchive/Products/Applications/$scheme.app"
           find "$archive_path.xcarchive/Products/Applications/$scheme.app" -type d -path '*/Frameworks/*.framework' -exec ldid -Sentitlements.xml \{\} \;
           ldid -Sentitlements.xml "$archive_path.xcarchive/Products/Applications/$scheme.app"
       - name: Create IPA
