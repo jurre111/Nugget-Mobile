@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1234567890ABCDEF12345678 /* Alertinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234567890ABCDEF12345677 /* Alertinator.swift */; };
+		1234567890ABCDEF12345658 /* Alertinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234567890ABCDEF12345677 /* Alertinator.swift */; };
 		1234567890ABCDEF12345676 /* bridge.h in Sources */ = {isa = PBXBuildFile; fileRef = 1234567890ABCDEF12345675 /* bridge.h */; };
 		1234567890ABCDEF12345674 /* Color++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234567890ABCDEF12345673 /* Color++.swift */; };
 		1234567890ABCDEF12345672 /* DirtyZeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234567890ABCDEF12345671 /* DirtyZeroView.swift */; };
