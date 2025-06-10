@@ -14,9 +14,9 @@ struct RootView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            ToolsView()
+            SettingsView()
                 .tabItem {
-                    Label("Tools", systemImage: "wrench.and.screwdriver.fill")
+                    Label("Settings", systemImage: "gear")
                 }
         }
     }
