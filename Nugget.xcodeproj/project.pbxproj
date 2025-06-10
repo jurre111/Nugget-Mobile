@@ -66,7 +66,6 @@
 		1234567890ABCDEF12345685 /* unwire_mlock_poc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dirtyZero/unwire_mlock_poc.swift; sourceTree = "<group>"; };
 		6F2A99712C9E0ABB00C8A862 /* EligibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EligibilityView.swift; sourceTree = "<group>"; };
 		6F9999972D00000000C8A862 /* SettingsView */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		6F9999962D00000000C8A862 /* DirtyZeroView */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyZeroView.swift; sourceTree = "<group>"; };
 		6F2A99732C9E0AEF00C8A862 /* EligibilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EligibilityManager.swift; sourceTree = "<group>"; };
 		6F2A99772C9E0C1E00C8A862 /* eligibility.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = eligibility.plist; sourceTree = "<group>"; };
 		6F2A99792C9E18DE00C8A862 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Config.plist; sourceTree = "<group>"; };
