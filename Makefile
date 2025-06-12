@@ -81,11 +81,9 @@ $(APPLICATION_NAME)_FILES += $(wildcard $(STATUS_MANAGER_DIR)/*.m)
 $(APPLICATION_NAME)_FILES += $(wildcard $(DIRTY_ZERO_DIR)/*.swift)
 $(APPLICATION_NAME)_FILES += $(SRC_DIR)/NuggetApp.swift
 $(APPLICATION_NAME)_FILES += include/Source/Device.generated.swift
-$(APPLICATION_NAME)_FILES += $(wildcard /include/MobileCoreServices/*.h)
-$(APPLICATION_NAME)_FILES += $(wildcard /include/MobileCoreServices/*.modulemap)
 
 $(APPLICATION_NAME)_FRAMEWORKS = UIKit Foundation
-$(APPLICATION_NAME)_CFLAGS = -fcommon -fobjc-arc
+$(APPLICATION_NAME)_CFLAGS = -fcommon -fobjc-arc -Iinclude
 $(APPLICATION_NAME)_SWIFTFLAGS = -Iinclude -import-objc-header include/minimuxer-Bridging-Header.h
 # $(APPLICATION_NAME)_SWIFTFLAGS += -Iinclude -import-objc-header Nugget/Nugget-Bridging-Header.h
 $(APPLICATION_NAME)_LDFLAGS = -L$(THEOS_OBJ_DIR) -rpath @executable_path/Frameworks
