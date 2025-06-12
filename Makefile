@@ -82,6 +82,7 @@ $(APPLICATION_NAME)_FILES += $(wildcard $(DIRTY_ZERO_DIR)/*.swift)
 $(APPLICATION_NAME)_FILES += $(SRC_DIR)/NuggetApp.swift
 $(APPLICATION_NAME)_FILES += include/Source/Device.generated.swift
 
+
 $(APPLICATION_NAME)_FRAMEWORKS = UIKit Foundation
 $(APPLICATION_NAME)_CFLAGS = -fcommon -fobjc-arc
 $(APPLICATION_NAME)_SWIFTFLAGS = -Iinclude -import-objc-header include/minimuxer-Bridging-Header.h
