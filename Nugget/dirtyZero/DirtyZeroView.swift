@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MobileCoreServices
 import UIKit
 
 struct ZeroTweak: Identifiable, Codable {
