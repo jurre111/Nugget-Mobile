@@ -79,7 +79,7 @@ var controlCenter: [ZeroTweak] = [
     ZeroTweak(icon: "moon", name: "Disable DND Icon", paths: ["/System/Library/PrivateFrameworks/FocusUI.framework/dnd_cg_02.ca/main.caml"])
 ]
 
-struct DirtyZeroView: View {
+struct ContentView: View {
     let device = Device.current
     @AppStorage("enabledTweaks") private var enabledTweakIds: [String] = []
     
@@ -121,7 +121,7 @@ struct DirtyZeroView: View {
                                 .foregroundStyle(.accent)
                             Text("[Install the newest version of dirtyZero!](itms-services://?action=download-manifest&url=https://github.com/jurre111/dirtyZero/raw/refs/heads/main/downloads/manifest.plist)")
                         }) {
-                            LoggerView()
+                            LogView()
                                 .frame(width: 340, height: 260)
                                 .onAppear(perform: {
                                     if !hasShownWelcome {
