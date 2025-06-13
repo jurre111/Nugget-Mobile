@@ -3,7 +3,7 @@ if [[ $* == *--scriptdebug* ]]; then
 fi
 set -e
 
-APP_NAME="iEscape"
+APP_NAME="Nugget"
 FILE_EXT="ipa"
 WORKING_LOCATION="$(pwd)"
 APP_BUILD_FILES="$WORKING_LOCATION/layout/Applications/$APP_NAME.app"
