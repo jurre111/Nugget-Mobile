@@ -79,7 +79,7 @@ var controlCenter: [ZeroTweak] = [
     ZeroTweak(icon: "moon", name: "Disable DND Icon", paths: ["/System/Library/PrivateFrameworks/FocusUI.framework/dnd_cg_02.ca/main.caml"])
 ]
 
-struct ContentView: View {
+struct DirtyZeroView: View {
     let device = Device.current
     @AppStorage("enabledTweaks") private var enabledTweakIds: [String] = []
     
@@ -228,7 +228,7 @@ struct ContentView: View {
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: Color.accentColor, Color.accentColor: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, fullwidth: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
@@ -262,7 +262,7 @@ struct ContentView: View {
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: Color.accentColor, Color.accentColor: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, fullwidth: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
@@ -296,7 +296,7 @@ struct ContentView: View {
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: Color.accentColor, Color.accentColor: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, fullwidth: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
