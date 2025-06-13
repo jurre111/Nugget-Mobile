@@ -1,8 +1,8 @@
-Package: com.leemin.nugget
-Name: Nugget
+Package: com.app.tooly
+Name: Tooly
 Version: 1.0
 Architecture: iphoneos-arm
-Description: Nugget.
-Maintainer: LeminLimez
+Description: Tooly.
+Maintainer: jurre111
 Author: LeminLimez
 Section: Utilities
