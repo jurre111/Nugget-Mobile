@@ -118,7 +118,7 @@ struct ContentView: View {
                         }, footer: VStack(alignment: .leading) {
                             Text("All tweaks are done in memory, so if something goes wrong, you can force reboot to revert changes.")
                             Text("[Join the jailbreak.party Discord!](https://discord.gg/XPj66zZ4gT)")
-                                .foregroundStyle(.accentColor)
+                                .foregroundStyle(Color.accentColor)
                             Text("[Install the newest version of dirtyZero!](itms-services://?action=download-manifest&url=https://github.com/jurre111/dirtyZero/raw/refs/heads/main/downloads/manifest.plist)")
                         }) {
                             LoggerView()
@@ -151,16 +151,16 @@ struct ContentView: View {
                                             Spacer()
                                             if isTweakEnabled(tweak) {
                                                 Image(systemName: "checkmark.circle.fill")
-                                                    .foregroundStyle(.accentColor)
+                                                    .foregroundStyle(Color.accentColor)
                                                     .imageScale(.medium)
                                             } else {
                                                 Image(systemName: "circle")
-                                                    .foregroundStyle(.accentColor)
+                                                    .foregroundStyle(Color.accentColor)
                                                     .imageScale(.medium)
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: .accentColor, fullWidth: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, fullWidth: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
@@ -185,16 +185,16 @@ struct ContentView: View {
                                             Spacer()
                                             if isTweakEnabled(tweak) {
                                                 Image(systemName: "checkmark.circle.fill")
-                                                    .foregroundStyle(.accentColor)
+                                                    .foregroundStyle(Color.accentColor)
                                                     .imageScale(.medium)
                                             } else {
                                                 Image(systemName: "circle")
-                                                    .foregroundStyle(.accentColor)
+                                                    .foregroundStyle(Color.accentColor)
                                                     .imageScale(.medium)
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: .accentColor, fullWidth: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, fullWidth: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
@@ -219,16 +219,16 @@ struct ContentView: View {
                                             Spacer()
                                             if isTweakEnabled(tweak) {
                                                 Image(systemName: "checkmark.circle.fill")
-                                                    .foregroundStyle(.accentColor)
+                                                    .foregroundStyle(Color.accentColor)
                                                     .imageScale(.medium)
                                             } else {
                                                 Image(systemName: "circle")
-                                                    .foregroundStyle(.accentColor)
+                                                    .foregroundStyle(Color.accentColor)
                                                     .imageScale(.medium)
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: .accentColor, fullWidth: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, fullWidth: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
@@ -253,16 +253,16 @@ struct ContentView: View {
                                             Spacer()
                                             if isTweakEnabled(tweak) {
                                                 Image(systemName: "checkmark.circle.fill")
-                                                    .foregroundStyle(.accentColor)
+                                                    .foregroundStyle(Color.accentColor)
                                                     .imageScale(.medium)
                                             } else {
                                                 Image(systemName: "circle")
-                                                    .foregroundStyle(.accentColor)
+                                                    .foregroundStyle(Color.accentColor)
                                                     .imageScale(.medium)
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: .accentColor, fullWidth: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, fullWidth: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
@@ -287,16 +287,16 @@ struct ContentView: View {
                                             Spacer()
                                             if isTweakEnabled(tweak) {
                                                 Image(systemName: "checkmark.circle.fill")
-                                                    .foregroundStyle(.accentColor)
+                                                    .foregroundStyle(Color.accentColor)
                                                     .imageScale(.medium)
                                             } else {
                                                 Image(systemName: "circle")
-                                                    .foregroundStyle(.accentColor)
+                                                    .foregroundStyle(Color.accentColor)
                                                     .imageScale(.medium)
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: .accentColor, fullWidth: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, fullWidth: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
@@ -320,10 +320,10 @@ struct ContentView: View {
                          }
                          .padding(.vertical, 15)
                          .frame(maxWidth: .infinity)
-                         .background(customZeroPath.isEmpty ? .accentColor.opacity(0.06) : .accentColor.opacity(0.2))
+                         .background(customZeroPath.isEmpty ? Color.accentColor.opacity(0.06) : Color.accentColor.opacity(0.2))
                          .background(.ultraThinMaterial)
                          .cornerRadius(14)
-                         .foregroundStyle(customZeroPath.isEmpty ? .accentColor.opacity(0.7) : .accentColor)
+                         .foregroundStyle(customZeroPath.isEmpty ? Color.accentColor.opacity(0.7) : Color.accentColor)
                          .disabled(customZeroPath.isEmpty)
                          }
                          .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
@@ -357,10 +357,10 @@ struct ContentView: View {
                                 }
                                 .padding(.vertical, 13)
                                 .frame(maxWidth: .infinity)
-                                .background(enabledTweaks.isEmpty ? .accentColor.opacity(0.06) : .accentColor.opacity(0.2))
+                                .background(enabledTweaks.isEmpty ? Color.accentColor.opacity(0.06) : Color.accentColor.opacity(0.2))
                                 .background(.ultraThinMaterial)
                                 .cornerRadius(14)
-                                .foregroundStyle(enabledTweaks.isEmpty ? .accentColor.opacity(0.7) : .accentColor)
+                                .foregroundStyle(enabledTweaks.isEmpty ? Color.accentColor.opacity(0.7) : Color.accentColor)
                                 .disabled(enabledTweaks.isEmpty)
                                 
                                 Button(action: {
