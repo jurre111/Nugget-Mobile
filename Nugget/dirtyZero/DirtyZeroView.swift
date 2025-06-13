@@ -20,7 +20,7 @@ struct ZeroTweak: Identifiable, Codable {
     }
 }
 
-extension Array: @retroactive RawRepresentable where Element: Codable {
+extension Array: RawRepresentable where Element: Codable {
     public init?(rawValue: String) {
         guard let data = rawValue.data(using: .utf8),
               let result = try? JSONDecoder().decode([Element].self, from: data)
@@ -160,7 +160,7 @@ struct ContentView: View {
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: Color.accentColor, fullWidth: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, fullwidth: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
@@ -194,7 +194,7 @@ struct ContentView: View {
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: Color.accentColor, fullWidth: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, fullwidth: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
@@ -228,7 +228,7 @@ struct ContentView: View {
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: Color.accentColor, fullWidth: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, Color.accentColor: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
@@ -262,7 +262,7 @@ struct ContentView: View {
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: Color.accentColor, fullWidth: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, Color.accentColor: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
@@ -296,7 +296,7 @@ struct ContentView: View {
                                             }
                                         }
                                     }
-                                    .buttonStyle(TintedButton(color: Color.accentColor, fullWidth: false))
+                                    .buttonStyle(TintedButton(color: Color.accentColor, Color.accentColor: false))
                                 }
                             }
                             .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))

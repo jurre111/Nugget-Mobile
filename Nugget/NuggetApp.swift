@@ -18,5 +18,3 @@ struct NuggetApp: App {
         }
     }
 }
-
-extension String: @retroactive Error {}
