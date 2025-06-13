@@ -27,7 +27,7 @@
 #import "StatusSetter.h"
 #import "StatusSetter16_1.h"
 #import "StatusSetter16.h"
-#import "Nugget-Swift.h"
+#import "Tooly-Swift.h"
 
 @interface StatusManager ()
 @property (nonatomic, strong) id <StatusSetter> setter;
