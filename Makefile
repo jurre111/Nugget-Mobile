@@ -4,7 +4,7 @@ TARGET := iphone:clang:16.5:16.0
 
 include $(THEOS)/makefiles/common.mk
 
-APPLICATION_NAME = iEscape
+APPLICATION_NAME = Nugget
 LIBRARY_NAME = libEMProxy libimobiledevice
 
 # Link em_proxy separately as it has duplicated symbols with minimuxer
