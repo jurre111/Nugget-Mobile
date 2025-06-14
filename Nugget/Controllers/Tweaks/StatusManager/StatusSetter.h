@@ -1,6 +1,6 @@
 #pragma once
 #import <Foundation/Foundation.h>
-#import "Tooly-Swift.h"
+#import "Nugget-Swift.h"
 
 @protocol StatusSetter <NSObject>
 - (bool) isCarrierOverridden;
