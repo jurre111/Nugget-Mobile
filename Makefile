@@ -29,7 +29,7 @@ libimobiledevice_LDFLAGS = \
 libimobiledevice_FRAMEWORKS = Foundation Security SystemConfiguration
 libimobiledevice_INSTALL_PATH = /Applications/$(APPLICATION_NAME).app/Frameworks
 
-SRC_DIR := Tooly
+SRC_DIR := Nugget
 # Directories
 SPARSERESTORE_DIR := $(SRC_DIR)/Sparserestore
 
