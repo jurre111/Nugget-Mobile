@@ -47,6 +47,10 @@ jobs:
         with:
           name: artifact
           path: build/*.ipa
+      - name: Move IPA to root of repository
+        run: |
+          mkdir -p downloads
+          mv build/*.ipa "$GITHUB_WORKSPACE/downloads/"
       - name: Commit and push IPA to repository
         run: |
           git config --global user.name "github-actions"
